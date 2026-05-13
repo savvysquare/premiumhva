@@ -76,10 +76,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Top-tier Executive and Healthcare Virtual Assistants for busy professionals. Tailored support, transparent pricing." },
       { name: "author", content: "PremiumHVA" },
       { property: "og:title", content: "PremiumHVA — Executive & Healthcare Virtual Assistants" },
-      { property: "og:description", content: "Tailored virtual assistance for executives and healthcare professionals." },
+      { property: "og:description", content: "Top-tier Executive and Healthcare Virtual Assistants for busy professionals. Tailored support, transparent pricing." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "PremiumHVA — Executive & Healthcare Virtual Assistants" },
+      { name: "twitter:description", content: "Top-tier Executive and Healthcare Virtual Assistants for busy professionals. Tailored support, transparent pricing." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b292ff20-d83c-4e9f-9fd5-c246e4f5628c/id-preview-6d8605e7--30526f38-d537-4c33-88db-11c480ca99a8.lovable.app-1778681408557.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b292ff20-d83c-4e9f-9fd5-c246e4f5628c/id-preview-6d8605e7--30526f38-d537-4c33-88db-11c480ca99a8.lovable.app-1778681408557.png" },
     ],
     links: [
       {
