@@ -1,15 +1,16 @@
 import { Link } from "@tanstack/react-router";
+import logo from "@/assets/logo-premiumhva.png";
 
 export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 backdrop-blur bg-background/80 border-b border-border">
       <div className="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 group">
-          <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-primary text-primary-foreground text-xs font-semibold">
-            p
+          <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary overflow-hidden">
+            <img src={logo} alt="PremiumHVA logo" className="h-6 w-6 object-contain" />
           </span>
           <span className="text-[17px] font-semibold tracking-tight">
-            premium<span className="text-primary">hva</span>
+            PremiumHVA
           </span>
         </Link>
         <nav className="hidden md:flex items-center gap-8 text-sm text-foreground/80">
