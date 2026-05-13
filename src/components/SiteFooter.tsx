@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import logo from "@/assets/logo-premiumhva.png";
 
 export function SiteFooter() {
   return (
@@ -8,8 +9,10 @@ export function SiteFooter() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-14">
           <div className="col-span-2">
             <div className="flex items-center gap-2">
-              <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-primary text-primary-foreground text-xs font-semibold">p</span>
-              <span className="text-[17px] font-semibold">premium<span className="text-primary">hva</span></span>
+              <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary overflow-hidden">
+                <img src={logo} alt="PremiumHVA logo" className="h-6 w-6 object-contain" />
+              </span>
+              <span className="text-[17px] font-semibold">PremiumHVA</span>
             </div>
             <p className="mt-4 max-w-sm text-sm text-muted-foreground">
               Executive and Healthcare Virtual Assistants for busy professionals — tailored support, transparent pricing, and dependable service.
