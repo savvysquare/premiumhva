@@ -12,9 +12,6 @@ export function PageFrame({ children }: { children: ReactNode }) {
       <SiteHeader />
       <div className="mx-auto max-w-7xl px-6">
         <div className="relative">
-          {/* vertical dotted rules — the Crescent signature */}
-          <div className="hidden lg:block absolute -left-4 top-0 bottom-0 dotted-rule-v" />
-          <div className="hidden lg:block absolute -right-4 top-0 bottom-0 dotted-rule-v" />
           <main className="py-10 md:py-16">{children}</main>
         </div>
       </div>
