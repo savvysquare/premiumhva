@@ -1,0 +1,77 @@
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { PageFrame, Eyebrow, SectionDivider } from "@/components/PageFrame";
+import execImg from "@/assets/executive-va.jpg";
+import healthImg from "@/assets/healthcare-va.jpg";
+
+export const Route = createFileRoute("/services")({
+  head: () => ({
+    meta: [
+      { title: "Services — PremiumHVA" },
+      { name: "description", content: "Executive and Healthcare Virtual Assistant services tailored to your workflow." },
+      { property: "og:title", content: "Services — PremiumHVA" },
+      { property: "og:description", content: "EVAs and HVAs for busy professionals." },
+    ],
+  }),
+  component: ServicesPage,
+});
+
+function ServicesPage() {
+  return (
+    <PageFrame>
+      <section>
+        <Eyebrow>Services</Eyebrow>
+        <h1 className="mt-4 text-4xl md:text-6xl font-semibold leading-[1.05] tracking-tight max-w-3xl">
+          Two specialised practices, one operating standard.
+        </h1>
+      </section>
+
+      <SectionDivider />
+
+      <section className="grid lg:grid-cols-12 gap-10 items-center">
+        <div className="lg:col-span-6 overflow-hidden rounded-2xl border border-border">
+          <img src={execImg} alt="Executive VA" loading="lazy" width={1024} height={768} className="w-full h-auto object-cover" />
+        </div>
+        <div className="lg:col-span-6">
+          <p className="text-xs uppercase tracking-wider text-primary font-medium">Executive</p>
+          <h2 className="mt-2 text-3xl font-semibold tracking-tight">Executive Virtual Assistants</h2>
+          <p className="mt-3 text-muted-foreground">
+            Smart, dependable assistants for time-poor leaders. Calendar management, inbox triage, research,
+            travel, and operational glue across your stack.
+          </p>
+          <ul className="mt-6 space-y-3 text-sm">
+            {["Calendar & inbox management", "Research & briefings", "Travel & expense", "Workflow integration"].map((t) => (
+              <li key={t} className="flex gap-3"><span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary" />{t}</li>
+            ))}
+          </ul>
+          <Link to="/contact" className="mt-8 inline-flex items-center rounded-full bg-primary px-5 py-3 text-sm font-medium text-primary-foreground hover:opacity-90">
+            Hire an EVA
+          </Link>
+        </div>
+      </section>
+
+      <SectionDivider />
+
+      <section className="grid lg:grid-cols-12 gap-10 items-center">
+        <div className="lg:col-span-6 lg:order-2 overflow-hidden rounded-2xl border border-border">
+          <img src={healthImg} alt="Healthcare VA" loading="lazy" width={1024} height={768} className="w-full h-auto object-cover" />
+        </div>
+        <div className="lg:col-span-6 lg:order-1">
+          <p className="text-xs uppercase tracking-wider text-primary font-medium">Healthcare</p>
+          <h2 className="mt-2 text-3xl font-semibold tracking-tight">Healthcare Virtual Assistants</h2>
+          <p className="mt-3 text-muted-foreground">
+            Trained assistants supporting clinics and medical professionals with patient scheduling, records,
+            billing, and day-to-day administration.
+          </p>
+          <ul className="mt-6 space-y-3 text-sm">
+            {["Patient scheduling & reminders", "Medical record management", "Billing & insurance support", "Front-desk coordination"].map((t) => (
+              <li key={t} className="flex gap-3"><span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary" />{t}</li>
+            ))}
+          </ul>
+          <Link to="/contact" className="mt-8 inline-flex items-center rounded-full bg-primary px-5 py-3 text-sm font-medium text-primary-foreground hover:opacity-90">
+            Hire an HVA
+          </Link>
+        </div>
+      </section>
+    </PageFrame>
+  );
+}
