@@ -6,7 +6,7 @@ import path from "path";
 export default defineConfig({
   plugins: [react(), tsconfigPaths()],
   build: {
-    outDir: "dist",
+    outDir: "dist/client",
     emptyOutDir: true,
   },
   resolve: {
