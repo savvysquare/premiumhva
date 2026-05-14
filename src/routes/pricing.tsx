@@ -4,10 +4,10 @@ import { PageFrame, Eyebrow, SectionDivider } from "@/components/PageFrame";
 export const Route = createFileRoute("/pricing")({
   head: () => ({
     meta: [
-      { title: "Pricing — PremiumHVA" },
-      { name: "description", content: "Transparent virtual assistant pricing starting from $9/hour. No surprises, regularly reviewed for reductions." },
-      { property: "og:title", content: "Pricing — PremiumHVA" },
-      { property: "og:description", content: "Starting from $9/hour. Reviewed frequently for reductions." },
+      { title: "Affordable Virtual Assistant Pricing — Starting at $9/hr" },
+      { name: "description", content: "Get expert Virtual Assistant support starting from just $9/hour. Transparent pricing for Executive, Healthcare, and Marketing VAs with no hidden fees." },
+      { property: "og:title", content: "Transparent Virtual Assistant Pricing — PremiumHVA" },
+      { property: "og:description", content: "Affordable VA rates for professionals and medical clinics. Starting from $9/hour." },
     ],
   }),
   component: PricingPage,

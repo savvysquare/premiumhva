@@ -1,15 +1,17 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageFrame, Eyebrow, SectionDivider } from "@/components/PageFrame";
-import execImg from "@/assets/executive-va.jpg";
-import healthImg from "@/assets/healthcare-va.jpg";
+import execImg from "@/assets/executive-virtual-assistant.jpg";
+import healthImg from "@/assets/healthcare-virtual-assistant.jpg";
+import socialImg from "@/assets/social-media-marketing-virtual-assistant.jpg";
+import digitalImg from "@/assets/digital-marketing-virtual-assistant.jpg";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services — PremiumHVA" },
-      { name: "description", content: "Executive and Healthcare Virtual Assistant services tailored to your workflow." },
-      { property: "og:title", content: "Services — PremiumHVA" },
-      { property: "og:description", content: "EVAs and HVAs for busy professionals." },
+      { title: "Our Services — Expert Executive & Healthcare Virtual Assistants" },
+      { name: "description", content: "Explore our specialized Virtual Assistant services, including Executive support, Healthcare coordination, Social Media management, and Digital Marketing strategies." },
+      { property: "og:title", content: "Expert Virtual Assistant Services — PremiumHVA" },
+      { property: "og:description", content: "Customized Virtual Assistant solutions for business and healthcare professionals." },
     ],
   }),
   component: ServicesPage,
@@ -29,7 +31,7 @@ function ServicesPage() {
 
       <section className="grid lg:grid-cols-12 gap-10 items-center">
         <div className="lg:col-span-6 overflow-hidden rounded-2xl border border-border">
-          <img src={execImg} alt="Executive VA" loading="lazy" width={1024} height={768} className="w-full h-auto object-cover" />
+          <img src={execImg} alt="Executive virtual assistant managing calendars and business operations" loading="lazy" width={1024} height={768} className="w-full h-auto object-cover" />
         </div>
         <div className="lg:col-span-6">
           <p className="text-xs uppercase tracking-wider text-primary font-medium">Executive</p>
@@ -53,7 +55,7 @@ function ServicesPage() {
 
       <section className="grid lg:grid-cols-12 gap-10 items-center">
         <div className="lg:col-span-6 lg:order-2 overflow-hidden rounded-2xl border border-border">
-          <img src={healthImg} alt="Healthcare VA" loading="lazy" width={1024} height={768} className="w-full h-auto object-cover" />
+          <img src={healthImg} alt="Healthcare virtual assistant supporting medical clinics and patient coordination" loading="lazy" width={1024} height={768} className="w-full h-auto object-cover" />
         </div>
         <div className="lg:col-span-6 lg:order-1">
           <p className="text-xs uppercase tracking-wider text-primary font-medium">Healthcare</p>
@@ -77,7 +79,7 @@ function ServicesPage() {
 
       <section className="grid lg:grid-cols-12 gap-10 items-center">
         <div className="lg:col-span-6 overflow-hidden rounded-2xl border border-border">
-          <img src={execImg} alt="Social Media Marketing" loading="lazy" width={1024} height={768} className="w-full h-auto object-cover" />
+          <img src={socialImg} alt="Social media marketing expert managing brand presence and content strategy" loading="lazy" width={1024} height={768} className="w-full h-auto object-cover" />
         </div>
         <div className="lg:col-span-6">
           <p className="text-xs uppercase tracking-wider text-primary font-medium">Marketing</p>
@@ -100,7 +102,7 @@ function ServicesPage() {
 
       <section className="grid lg:grid-cols-12 gap-10 items-center">
         <div className="lg:col-span-6 lg:order-2 overflow-hidden rounded-2xl border border-border">
-          <img src={healthImg} alt="Digital Marketing" loading="lazy" width={1024} height={768} className="w-full h-auto object-cover" />
+          <img src={digitalImg} alt="Digital marketing virtual assistant executing SEO and performance marketing strategies" loading="lazy" width={1024} height={768} className="w-full h-auto object-cover" />
         </div>
         <div className="lg:col-span-6 lg:order-1">
           <p className="text-xs uppercase tracking-wider text-primary font-medium">Digital</p>

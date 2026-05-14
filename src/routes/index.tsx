@@ -1,16 +1,18 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageFrame, Eyebrow, SectionDivider } from "@/components/PageFrame";
-import heroImg from "@/assets/hero-assistant.jpg";
-import execImg from "@/assets/executive-va.jpg";
-import healthImg from "@/assets/healthcare-va.jpg";
+import heroImg from "@/assets/virtual-assistant-services.jpg";
+import execImg from "@/assets/executive-virtual-assistant.jpg";
+import healthImg from "@/assets/healthcare-virtual-assistant.jpg";
+import socialImg from "@/assets/social-media-marketing-virtual-assistant.jpg";
+import digitalImg from "@/assets/digital-marketing-virtual-assistant.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "PremiumHVA — Executive & Healthcare Virtual Assistants" },
-      { name: "description", content: "Top-tier Executive, Healthcare, Social Media and Digital Marketing Virtual Assistants for busy professionals. Tailored support, transparent pricing." },
-      { property: "og:title", content: "PremiumHVA — Executive & Healthcare Virtual Assistants" },
-      { property: "og:description", content: "Top-tier Executive and Healthcare Virtual Assistants, tailored to you." },
+      { title: "PremiumHVA — Top Executive & Healthcare Virtual Assistants" },
+      { name: "description", content: "Top-tier Executive, Healthcare, Social Media, and Digital Marketing Virtual Assistants. Expert support for professionals and medical clinics. Transparent pricing." },
+      { property: "og:title", content: "PremiumHVA — Expert Virtual Assistant Services" },
+      { property: "og:description", content: "Premium Executive, Healthcare, and Digital Marketing Virtual Assistants tailored to your business needs." },
     ],
   }),
   component: HomePage,
@@ -59,7 +61,7 @@ function HomePage() {
         </div>
         <div className="lg:col-span-5">
           <div className="overflow-hidden rounded-2xl border border-border">
-            <img src={heroImg} alt="Healthcare virtual assistant at work" width={1280} height={960} className="w-full h-auto object-cover" />
+            <img src={heroImg} alt="Best virtual assistant services for executive and healthcare professionals" width={1280} height={960} className="w-full h-auto object-cover" />
           </div>
         </div>
       </section>
@@ -106,7 +108,7 @@ function HomePage() {
         </div>
         <div className="lg:col-span-8 grid md:grid-cols-2 gap-6">
           <article className="rounded-2xl border border-border bg-card overflow-hidden">
-            <img src={execImg} alt="Executive virtual assistant" loading="lazy" width={1024} height={768} className="w-full aspect-[4/3] object-cover" />
+            <img src={execImg} alt="Professional executive virtual assistant providing administrative support" loading="lazy" width={1024} height={768} className="w-full aspect-[4/3] object-cover" />
             <div className="p-6">
               <p className="text-xs uppercase tracking-wider text-primary font-medium">Executive</p>
               <h3 className="mt-2 text-xl font-semibold">Executive Virtual Assistants</h3>
@@ -116,7 +118,7 @@ function HomePage() {
             </div>
           </article>
           <article className="rounded-2xl border border-border bg-card overflow-hidden">
-            <img src={healthImg} alt="Healthcare virtual assistant" loading="lazy" width={1024} height={768} className="w-full aspect-[4/3] object-cover" />
+            <img src={healthImg} alt="Expert healthcare virtual assistant managing medical records and scheduling" loading="lazy" width={1024} height={768} className="w-full aspect-[4/3] object-cover" />
             <div className="p-6">
               <p className="text-xs uppercase tracking-wider text-primary font-medium">Healthcare</p>
               <h3 className="mt-2 text-xl font-semibold">Healthcare Virtual Assistants</h3>
@@ -126,7 +128,7 @@ function HomePage() {
             </div>
           </article>
           <article className="rounded-2xl border border-border bg-card overflow-hidden">
-            <img src={heroImg} alt="Social Media Marketing" loading="lazy" width={1024} height={768} className="w-full aspect-[4/3] object-cover" />
+            <img src={socialImg} alt="Social media marketing virtual assistant managing brand engagement" loading="lazy" width={1024} height={768} className="w-full aspect-[4/3] object-cover" />
             <div className="p-6">
               <p className="text-xs uppercase tracking-wider text-primary font-medium">Marketing</p>
               <h3 className="mt-2 text-xl font-semibold">Social Media Marketing</h3>
@@ -136,7 +138,7 @@ function HomePage() {
             </div>
           </article>
           <article className="rounded-2xl border border-border bg-card overflow-hidden">
-            <img src={heroImg} alt="Digital Marketing" loading="lazy" width={1024} height={768} className="w-full aspect-[4/3] object-cover" />
+            <img src={digitalImg} alt="Digital marketing virtual assistant optimizing SEO and PPC campaigns" loading="lazy" width={1024} height={768} className="w-full aspect-[4/3] object-cover" />
             <div className="p-6">
               <p className="text-xs uppercase tracking-wider text-primary font-medium">Digital</p>
               <h3 className="mt-2 text-xl font-semibold">Digital Marketing</h3>

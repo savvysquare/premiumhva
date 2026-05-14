@@ -1,14 +1,14 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageFrame, Eyebrow, SectionDivider } from "@/components/PageFrame";
-import execImg from "@/assets/executive-va.jpg";
+import execImg from "@/assets/executive-virtual-assistant.jpg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — PremiumHVA" },
-      { name: "description", content: "Your partner in Executive and Healthcare Virtual Assistance. Customised support for leaders and clinicians." },
-      { property: "og:title", content: "About — PremiumHVA" },
-      { property: "og:description", content: "Facilitating seamless collaboration for executives and healthcare professionals." },
+      { title: "About Us — Premium Virtual Assistant Services" },
+      { name: "description", content: "Learn how PremiumHVA provides world-class Executive and Healthcare Virtual Assistance. We help leaders and medical professionals scale their impact." },
+      { property: "og:title", content: "About PremiumHVA — Trusted Virtual Assistant Partner" },
+      { property: "og:description", content: "Dedicated to facilitating seamless collaboration for executives and healthcare professionals." },
     ],
   }),
   component: AboutPage,
@@ -30,7 +30,7 @@ function AboutPage() {
         </div>
         <div className="lg:col-span-5">
           <div className="overflow-hidden rounded-2xl border border-border">
-            <img src={execImg} alt="Executive consultant" loading="lazy" width={1024} height={768} className="w-full h-auto object-cover" />
+            <img src={execImg} alt="Professional virtual assistant consultant providing strategic support to business leaders" loading="lazy" width={1024} height={768} className="w-full h-auto object-cover" />
           </div>
         </div>
       </section>
