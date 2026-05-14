@@ -1,5 +1,8 @@
 {
   "version": 2,
-  "buildCommand": "NITRO_PRESET=vercel bun run build",
-  "outputDirectory": ".vercel/output"
+  "cleanUrls": true,
+  "outputDirectory": "dist/client",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }
