@@ -72,6 +72,52 @@ function ServicesPage() {
           </Link>
         </div>
       </section>
+
+      <SectionDivider />
+
+      <section className="grid lg:grid-cols-12 gap-10 items-center">
+        <div className="lg:col-span-6 overflow-hidden rounded-2xl border border-border">
+          <img src={execImg} alt="Social Media Marketing" loading="lazy" width={1024} height={768} className="w-full h-auto object-cover" />
+        </div>
+        <div className="lg:col-span-6">
+          <p className="text-xs uppercase tracking-wider text-primary font-medium">Marketing</p>
+          <h2 className="mt-2 text-3xl font-semibold tracking-tight">Social Media Marketing</h2>
+          <p className="mt-3 text-muted-foreground">
+            Elevate your brand with strategic social media management. We handle everything from content creation to community engagement.
+          </p>
+          <ul className="mt-6 space-y-3 text-sm">
+            {["Social media strategy & planning", "Content creation & curation", "Community management", "Analytics & reporting"].map((t) => (
+              <li key={t} className="flex gap-3"><span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary" />{t}</li>
+            ))}
+          </ul>
+          <Link to="/contact" className="mt-8 inline-flex items-center rounded-full bg-primary px-5 py-3 text-sm font-medium text-primary-foreground hover:opacity-90">
+            Get started
+          </Link>
+        </div>
+      </section>
+
+      <SectionDivider />
+
+      <section className="grid lg:grid-cols-12 gap-10 items-center">
+        <div className="lg:col-span-6 lg:order-2 overflow-hidden rounded-2xl border border-border">
+          <img src={healthImg} alt="Digital Marketing" loading="lazy" width={1024} height={768} className="w-full h-auto object-cover" />
+        </div>
+        <div className="lg:col-span-6 lg:order-1">
+          <p className="text-xs uppercase tracking-wider text-primary font-medium">Digital</p>
+          <h2 className="mt-2 text-3xl font-semibold tracking-tight">Digital Marketing</h2>
+          <p className="mt-3 text-muted-foreground">
+            Comprehensive digital growth strategies to scale your presence. From SEO to automated email campaigns, we drive results.
+          </p>
+          <ul className="mt-6 space-y-3 text-sm">
+            {["Search Engine Optimization (SEO)", "Pay-Per-Click (PPC) management", "Email marketing campaigns", "Funnel optimization"].map((t) => (
+              <li key={t} className="flex gap-3"><span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary" />{t}</li>
+            ))}
+          </ul>
+          <Link to="/contact" className="mt-8 inline-flex items-center rounded-full bg-primary px-5 py-3 text-sm font-medium text-primary-foreground hover:opacity-90">
+            Learn more
+          </Link>
+        </div>
+      </section>
     </PageFrame>
   );
 }

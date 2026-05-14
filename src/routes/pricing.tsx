@@ -14,7 +14,7 @@ export const Route = createFileRoute("/pricing")({
 });
 
 const faqs = [
-  { q: "What services does PremiumHVA provide?", a: "We offer specialised Executive Virtual Assistants (EVAs) for business professionals and Healthcare Virtual Assistants (HVAs) for medical institutions — including administrative support, scheduling, patient coordination, and more." },
+  { q: "What services does PremiumHVA provide?", a: "We offer specialised Executive (EVAs) and Healthcare (HVAs) Virtual Assistants, as well as Social Media and Digital Marketing services — including administrative support, content management, scheduling, and digital strategy." },
   { q: "How can an Executive Virtual Assistant help my business?", a: "EVAs handle time-consuming administrative tasks such as calendar management, email correspondence, and research, allowing executives to focus on strategic growth." },
   { q: "What tasks can a Healthcare Virtual Assistant perform?", a: "HVAs assist with patient scheduling, medical record management, billing support, and other healthcare-related administrative tasks." },
   { q: "Are your virtual assistants trained professionals?", a: "Yes — all our EVAs and HVAs undergo rigorous training to ensure they meet industry standards." },

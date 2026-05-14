@@ -8,7 +8,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "PremiumHVA — Executive & Healthcare Virtual Assistants" },
-      { name: "description", content: "Top-tier Executive Virtual Assistants and Healthcare Virtual Assistants for busy professionals. Tailored support, transparent pricing." },
+      { name: "description", content: "Top-tier Executive, Healthcare, Social Media and Digital Marketing Virtual Assistants for busy professionals. Tailored support, transparent pricing." },
       { property: "og:title", content: "PremiumHVA — Executive & Healthcare Virtual Assistants" },
       { property: "og:description", content: "Top-tier Executive and Healthcare Virtual Assistants, tailored to you." },
     ],
@@ -125,6 +125,26 @@ function HomePage() {
               </p>
             </div>
           </article>
+          <article className="rounded-2xl border border-border bg-card overflow-hidden">
+            <img src={heroImg} alt="Social Media Marketing" loading="lazy" width={1024} height={768} className="w-full aspect-[4/3] object-cover" />
+            <div className="p-6">
+              <p className="text-xs uppercase tracking-wider text-primary font-medium">Marketing</p>
+              <h3 className="mt-2 text-xl font-semibold">Social Media Marketing</h3>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Strategic social media management and content creation to build your brand and engage your audience.
+              </p>
+            </div>
+          </article>
+          <article className="rounded-2xl border border-border bg-card overflow-hidden">
+            <img src={heroImg} alt="Digital Marketing" loading="lazy" width={1024} height={768} className="w-full aspect-[4/3] object-cover" />
+            <div className="p-6">
+              <p className="text-xs uppercase tracking-wider text-primary font-medium">Digital</p>
+              <h3 className="mt-2 text-xl font-semibold">Digital Marketing</h3>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Comprehensive digital strategies including SEO and email marketing to scale your business effectively.
+              </p>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -169,6 +189,56 @@ function HomePage() {
               "Expert healthcare support for clinical-adjacent tasks",
               "Personalised support for individual practitioners and teams",
               "Streamlined healthcare processes that save time and effort",
+            ].map((t) => (
+              <li key={t} className="py-4 flex items-start gap-4">
+                <span className="mt-2 inline-block h-1.5 w-1.5 rounded-full bg-primary" />
+                <span className="text-base">{t}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <SectionDivider />
+
+      <section className="grid lg:grid-cols-12 gap-10">
+        <div className="lg:col-span-5">
+          <h3 className="text-2xl md:text-3xl font-semibold tracking-tight">Social Media Marketing</h3>
+          <p className="mt-4 text-muted-foreground">
+            Strategic social media management to build brand awareness and drive engagement across all platforms.
+          </p>
+        </div>
+        <div className="lg:col-span-7">
+          <ul className="divide-y divide-border border-y border-border">
+            {[
+              "Full-service management of LinkedIn, Instagram, and more",
+              "Engagement-focused content creation and scheduling",
+              "Audience growth and community management by experts",
+            ].map((t) => (
+              <li key={t} className="py-4 flex items-start gap-4">
+                <span className="mt-2 inline-block h-1.5 w-1.5 rounded-full bg-primary" />
+                <span className="text-base">{t}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <SectionDivider />
+
+      <section className="grid lg:grid-cols-12 gap-10">
+        <div className="lg:col-span-5">
+          <h3 className="text-2xl md:text-3xl font-semibold tracking-tight">Digital Marketing</h3>
+          <p className="mt-4 text-muted-foreground">
+            Comprehensive digital growth strategies designed to increase your visibility and scale your results.
+          </p>
+        </div>
+        <div className="lg:col-span-7">
+          <ul className="divide-y divide-border border-y border-border">
+            {[
+              "Data-driven SEO strategies for search engine visibility",
+              "Automated email marketing and funnel optimization",
+              "Performance tracking and strategic growth consulting",
             ].map((t) => (
               <li key={t} className="py-4 flex items-start gap-4">
                 <span className="mt-2 inline-block h-1.5 w-1.5 rounded-full bg-primary" />
