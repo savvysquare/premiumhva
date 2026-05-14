@@ -155,7 +155,7 @@ function HomePage() {
         <div className="lg:col-span-4">
           <Eyebrow>What we do</Eyebrow>
           <h2 className="mt-3 text-3xl md:text-4xl font-semibold tracking-tight">
-            Two specialised teams. One reliable partner.
+            Four specialised teams. One reliable partner.
           </h2>
         </div>
         <div className="lg:col-span-8 grid md:grid-cols-2 gap-6">

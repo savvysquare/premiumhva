@@ -31,7 +31,7 @@ function ServicesPage() {
       <section>
         <Eyebrow>Services</Eyebrow>
         <h1 className="mt-4 text-4xl md:text-6xl font-semibold leading-[1.05] tracking-tight max-w-3xl">
-          Two specialised practices, one operating standard.
+          Four specialised practices, one operating standard.
         </h1>
       </section>
 
