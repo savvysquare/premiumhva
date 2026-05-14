@@ -25,7 +25,5 @@ export function SectionDivider() {
 }
 
 export function Eyebrow({ children }: { children: ReactNode }) {
-  return (
-    <p className="text-sm text-muted-foreground tracking-wide">{children}</p>
-  );
+  return <p className="text-sm text-muted-foreground tracking-wide">{children}</p>;
 }

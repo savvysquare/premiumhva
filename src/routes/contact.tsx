@@ -5,12 +5,10 @@ import { PageFrame, Eyebrow, SectionDivider } from "@/components/PageFrame";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-    meta: [
       { title: "Hire a Virtual Assistant — Contact PremiumHVA Today" },
       { name: "description", content: "Ready to scale? Contact PremiumHVA to hire an expert Executive or Healthcare Virtual Assistant. We provide tailored solutions for busy professionals." },
       { property: "og:title", content: "Contact PremiumHVA — Expert VA Support" },
       { property: "og:description", content: "Get in touch to find the perfect virtual assistant for your business or medical practice." },
-    ],
     ],
   }),
   component: ContactPage,

@@ -15,16 +15,33 @@ export function SiteFooter() {
               <span className="text-[17px] font-semibold">PremiumHVA</span>
             </div>
             <p className="mt-4 max-w-sm text-sm text-muted-foreground">
-              Executive and Healthcare Virtual Assistants for busy professionals — tailored support, transparent pricing, and dependable service.
+              Executive and Healthcare Virtual Assistants for busy professionals — tailored support,
+              transparent pricing, and dependable service.
             </p>
           </div>
           <div>
             <p className="text-xs uppercase tracking-wider text-muted-foreground">Company</p>
             <ul className="mt-4 space-y-2 text-sm">
-              <li><Link to="/about" className="hover:text-primary">About</Link></li>
-              <li><Link to="/services" className="hover:text-primary">Services</Link></li>
-              <li><Link to="/pricing" className="hover:text-primary">Pricing</Link></li>
-              <li><Link to="/contact" className="hover:text-primary">Contact</Link></li>
+              <li>
+                <Link to="/about" className="hover:text-primary">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link to="/services" className="hover:text-primary">
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link to="/pricing" className="hover:text-primary">
+                  Pricing
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="hover:text-primary">
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
@@ -32,7 +49,11 @@ export function SiteFooter() {
             <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
               <li>help@premiumhva.com</li>
               <li>(832) 736-0662</li>
-              <li>5900 Balcones Dr STE 100<br />Austin, TX 78731</li>
+              <li>
+                5900 Balcones Dr STE 100
+                <br />
+                Austin, TX 78731
+              </li>
             </ul>
           </div>
         </div>
