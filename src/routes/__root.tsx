@@ -4,7 +4,6 @@ import {
   Link,
   createRootRouteWithContext,
   useRouter,
-  HeadContent,
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
