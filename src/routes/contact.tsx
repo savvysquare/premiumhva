@@ -114,10 +114,13 @@ function ContactPage() {
     }
 
     setStatus("sending");
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 15000);
     try {
       const res = await fetch(FORMSPREE_ENDPOINT, {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
+        signal: controller.signal,
         body: JSON.stringify({
           name: `${fields.first} ${fields.last}`,
           email: fields.email,
@@ -126,6 +129,7 @@ function ContactPage() {
           message: fields.message,
         }),
       });
+      clearTimeout(timeoutId);
       if (res.ok) {
         setStatus("sent");
         setFields(EMPTY);
@@ -135,6 +139,7 @@ function ContactPage() {
         setStatus("error");
       }
     } catch {
+      clearTimeout(timeoutId);
       setStatus("error");
     }
   }
