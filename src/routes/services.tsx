@@ -45,7 +45,7 @@ function ServicesPage() {
             loading="lazy"
             width={1024}
             height={768}
-            className="w-full h-auto object-cover"
+            className="w-full aspect-[4/3] object-cover"
           />
         </div>
         <div className="lg:col-span-6">
@@ -89,7 +89,7 @@ function ServicesPage() {
             loading="lazy"
             width={1024}
             height={768}
-            className="w-full h-auto object-cover"
+            className="w-full aspect-[4/3] object-cover"
           />
         </div>
         <div className="lg:col-span-6 lg:order-1">
@@ -133,7 +133,7 @@ function ServicesPage() {
             loading="lazy"
             width={1024}
             height={768}
-            className="w-full h-auto object-cover"
+            className="w-full aspect-[4/3] object-cover"
           />
         </div>
         <div className="lg:col-span-6">
@@ -175,7 +175,7 @@ function ServicesPage() {
             loading="lazy"
             width={1024}
             height={768}
-            className="w-full h-auto object-cover"
+            className="w-full aspect-[4/3] object-cover"
           />
         </div>
         <div className="lg:col-span-6 lg:order-1">
